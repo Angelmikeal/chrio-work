@@ -1,0 +1,349 @@
+ body {
+ 	padding: 0px !important;
+ 	margin: 0px !important;
+ 	overflow-x: hidden !important;
+ 	min-height: 100%; 
+ }
+
+
+@font-face {
+  font-family: 'Mont-HeavyDEMO';
+  src: url('./mont(1)/Mont-HeavyDEMO.otf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+@font-face {
+  font-family: 'Mont-ExtraLightDEMO';
+  src: url('./mont(1)/Mont-ExtraLightDEMO.otf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+section {
+	display: table;
+}
+
+.backImg {
+	background-image: url('./Chrio_resources/front-page-1.jpg');
+    height: 100% !important;
+    width :100% !important;
+    background-size: cover;
+    padding-top: 30px;
+    padding-left: 50px;
+    background-repeat: no-repeat;
+}
+
+
+.logo{
+	font-family: 'Mont-HeavyDEMO';
+	display: inline-flex;
+
+}
+
+.logoImg {
+	height: 70px;
+	width: 70px;
+}
+
+.logoTX {
+	margin-left: 10px;
+	margin-top: 15px;
+	font-size: 25px;
+	line-height: 15px;
+}
+
+.logo1 {
+	font-size: 9px;
+}
+
+.We {
+	font-size: 40px;
+	font-family: 'Mont-ExtraLightDEMO';
+}
+
+
+.introWe {
+	font-family: 'Mont-HeavyDEMO';
+}
+
+.introHr {
+	width: 50px;
+	float: left;
+	border: 3px solid rgb(255, 228, 0);
+	margin-top: -10px;
+}
+
+ .jumbotron {
+ 	background-color: transparent;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-left: 15px !important;
+	font-family: 'Mont-HeavyDEMO';
+	display: inline-flex;
+}
+
+.passion {
+	font-family: 'Mont-ExtraLightDEMO';
+	font-size: 20px;
+	font-weight: 400;
+	max-width: 620px;
+}
+
+@media only screen and (max-width: 438px){
+	h1 {
+		font-size: 30px !important;
+	}
+
+
+	.backImg {
+		padding: 0px !important;
+		text-align: center;
+
+	}
+
+	.We {
+		padding: 0px !important;
+
+	}
+
+	.jumbotron {
+	display: block;
+	background-color: transparent;
+	padding: 0px !important;
+	}
+
+	.introHr {
+	width: 50px;
+	border: 3px solid rgb(255, 228, 0);
+	margin-top: -10px;
+	margin-left: 40px;
+	display: none;
+	}
+
+
+
+}
+
+.clicker  {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.link {
+	height: 12px;
+	width: 12px;
+	background-color: rgb(129, 129, 129);
+	display: inline-block;
+	border-radius: 50%;
+
+}
+
+.active{
+	height: 15px;
+	width: 15px;
+	background-color: rgb(48, 48, 48);
+	border-radius: 50%;
+	display: inline-block;
+}
+
+
+.container {
+	margin: 0px !important;
+} 
+
+/* PAGE 2 BEGINS HERE */
+
+
+     .page2Img {
+        background: url('./Chrio_resources/page2.jpg');
+        width: 100% !important;
+        background-size: cover;
+    	min-height: 200% !important;
+    	padding: 50px;
+     }
+
+
+     .what2 {
+	font-family: 'Mont-HeavyDEMO';
+}
+
+
+     .what1 {
+	font-family: 'Mont-ExtraLightDEMO';
+	margin-left: 25px;
+}
+
+
+	.whatHr {
+	width: 90px;
+	float: left;
+	border: 3px solid rgb(255, 228, 0);
+	margin-top: -10px;
+	margin-left: 3px;
+}
+
+
+	.WhatWEdo { 
+		max-width: 680px;
+		height: auto;
+		background-color: rgba(255, 228, 0, 0.30);
+		margin-top: 40px !important;
+		padding-top: 20px;
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+		padding-left: 20px !important;
+	}
+
+
+	.strategy {
+		padding: 0px !important;
+	}
+
+
+	.strategy ul {
+		list-style: none;
+		padding: 10px;
+		font-size: 20px;
+		font-family: 'Mont-ExtraLightDEMO';
+	}
+
+	.strategy ul li{
+	}
+
+
+
+	 .strategy ul li h2 {
+		font-family: 'Mont-HeavyDEMO';
+	}
+
+
+ @media only screen and (max-width: 766px){
+ 		.page2Img {
+ 			text-align: center;
+ 		}
+
+ 		.whatHr {
+			width: 90px;
+			border: 3px solid rgb(255, 228, 0);
+			margin-top: -10px;
+			position: absolute;
+			right: 55%
+		}
+ }
+
+
+ @media only screen and (max-width: 330px){
+ 		.whatHr {
+			width: 90px;
+			border: 5px solid rgb(255, 228, 0);
+			margin-top: -10px;
+			position: absolute;
+			right: 55%;
+			display: none;
+		}
+
+		.what1 {
+			margin-bottom: 40px;
+		}
+
+
+		.strategy ul {
+			padding-left: 0px !important;
+		}
+
+		.strategy ul li {
+			border-bottom: 1px solid #000000;
+		}
+
+		.leads {
+			border-bottom: 0px !important;
+		}
+
+		.what1 {
+			font-family: 'Mont-ExtraLightDEMO';
+			margin-left: 0px;
+		}
+
+ }
+
+
+  @media only screen and (max-width: 380px) {
+  		.strategy ul li {
+			border-bottom: 1px solid #000000;
+		}
+
+		.leads {
+			border-bottom: 0px !important;
+		}
+
+		     .what1 {
+				font-family: 'Mont-ExtraLightDEMO';
+				margin-left: 0px;
+			}
+
+  }
+
+
+  /* PAGE 3 STARTS HERE*/
+
+       .page3Img {
+        background: url('./Chrio_resources/page3.jpg');
+        width: 100% !important;
+        background-size: cover;
+    	min-height: 100vh !important;
+    	padding: 50px;
+
+    	background-repeat: no-repeat;
+     }
+
+     .head {
+     	margin-bottom: 40px;
+     }
+
+
+     .plans {
+     	width: 250px;
+     	background-color: rgba(255, 228, 0, 0.30);
+     	text-align: center;
+     	margin: auto;
+     	padding: 20px;
+     }
+
+     
+     .plans h1 {
+     	font-family: 'Mont-HeavyDEMO';
+     	font-size: 35px;
+     	margin-top: 0px;
+     	margin-bottom: 0px;
+     }
+
+     .planType {
+     	font-family: 'Mont-ExtraLightDEMO' !important;
+     	margin-top: 0px !important;
+     	font-size: 27px !important;
+     	line-height: 30px;
+
+     }
+     
+     .plans hr {
+     	border: 0.5px solid #000000;
+     	margin-top: 10px;
+     	width: 150px;
+     }
+
+     .plans p {
+     	font-family: 'Mont-ExtraLightDEMO';
+     }
+
+     .price {
+     	margin-top: 120px;
+     	font-family: 'Mont-HeavyDEMO' !important;
+     }
+
+
+     .price2 {
+     	margin-top: 103px;
+     	font-family: 'Mont-HeavyDEMO' !important;
+     }
+
+    .price3 {
+     	margin-top: 68px;
+     	font-family: 'Mont-HeavyDEMO' !important;
+     }
