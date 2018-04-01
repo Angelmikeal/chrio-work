@@ -1,8 +1,20 @@
+html {
+	width: 100% !important;
+ 	height: 100% !important;
+}
+
+.item {
+	min-width: 100% !important;
+	min-height: 100% !important;
+	display: table;
+}
+
  body {
  	padding: 0px !important;
  	margin: 0px !important;
  	overflow-x: hidden !important;
- 	min-height: 100%; 
+ 	width: 100% !important;
+ 	height: 100% !important;
  }
 
 
@@ -14,21 +26,31 @@
 @font-face {
   font-family: 'Mont-ExtraLightDEMO';
   src: url('./mont(1)/Mont-ExtraLightDEMO.otf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}  
+} 
 
-section {
-	display: table;
-}
+
+.sheet {
+	background-color: rgba(255, 255, 255, 0.50);
+	background-size: cover;
+	min-height: 100vh !important;
+	min-width: 100% !important;
+} 
+
 
 .backImg {
 	background-image: url('./Chrio_resources/front-page-1.jpg');
-    height: 100vh !important;
-    width :100% !important;
     background-size: cover;
-    padding-top: 30px;
-    padding-left: 50px;
+    min-width: 100%;
+    min-height: 100% !important;
+    padding-top: 40px !important;
+    padding-left: 50px !important;
     background-repeat: no-repeat;
 }
+
+.nopad {
+	padding: 0px !important;
+}
+
 
 
 .logo{
@@ -86,6 +108,7 @@ section {
 	font-size: 20px;
 	font-weight: 400;
 	max-width: 620px;
+	margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 438px){
@@ -99,6 +122,8 @@ section {
 
 	.We {
 		padding: 0px !important;
+		width: 200px;
+		margin: auto;
 
 	}
 
@@ -109,55 +134,38 @@ section {
 	}
 
 	.introHr {
-	width: 50px;
+	width: 80px;
 	border: 3px solid rgb(255, 228, 0);
 	margin-top: -10px;
 	margin-left: 40px;
-	display: none;
 	}
 
 
 
 }
 
-.clicker  {
-	margin-top: 40px;
-	text-align: center;
-}
-
-.link {
-	height: 12px;
-	width: 12px;
-	background-color: rgb(129, 129, 129);
-	display: inline-block;
-	border-radius: 50%;
-
-}
-
-.active{
-	height: 15px;
-	width: 15px;
-	background-color: rgb(48, 48, 48);
-	border-radius: 50%;
-	display: inline-block;
-}
-
-
 .container {
 	margin: 0px !important;
+	padding: 0px !important;
 } 
+
 
 /* PAGE 2 BEGINS HERE */
 
 
      .page2Img {
         background: url('./Chrio_resources/page2.jpg');
-        width: 100% !important;
-        background-size: cover;
-    	min-height: 100vh !important;
-    	padding: 50px;
+	    background-size: cover;
+	    min-width: 100%;
+	    min-height: 100% !important;
+	    padding: 3% !important;
+	    background-repeat: no-repeat;
      }
 
+     .What {
+	font-size: 40px;
+	font-family: 'Mont-ExtraLightDEMO';
+}
 
      .what2 {
 	font-family: 'Mont-HeavyDEMO';
@@ -183,7 +191,7 @@ section {
 		max-width: 680px;
 		height: auto;
 		background-color: rgba(255, 228, 0, 0.30);
-		margin-top: 40px !important;
+		margin-top: 100px !important;
 		padding-top: 20px;
 		margin-right: 0px !important;
 		margin-left: 0px !important;
@@ -216,26 +224,46 @@ section {
  @media only screen and (max-width: 766px){
  		.page2Img {
  			text-align: center;
- 		}
+ 	}
 
  		.whatHr {
 			width: 100px;
 			border: 3px solid rgb(255, 228, 0);
 			margin-top: -10px;
-			position: absolute;
-			right: 52%;
-		}
+			margin-left: 3px;
+	}
+
+
+		  .head {
+     	margin-bottom: 40px !important;
+     	text-align: center;
+     }
+
+			.planHr {
+			width: 70px;
+			border: 3px solid rgb(255, 228, 0);
+			margin-top: -10px;
+			float: none !important;
+	 }
+
+
+	 .What {
+	font-size: 40px;
+	font-family: 'Mont-ExtraLightDEMO';
+	width: 300px !important;
+	margin: auto !important;
+
+	}
+
  }
 
 
  @media only screen and (max-width: 385px){
  		.whatHr {
-			width: 10px;
+			width: 100px;
 			border: 5px solid rgb(255, 228, 0);
 			margin-top: -10px;
-			position: absolute;
-			right: 55%;
-			display: none;
+			margin-left: 3px;
 		}
 
 		.what1 {
@@ -260,6 +288,13 @@ section {
 			margin-left: 0px;
 		}
 
+			 .What {
+	font-size: 40px;
+	font-family: 'Mont-ExtraLightDEMO';
+	width: 300px !important;
+	margin: auto !important;
+
+	}
  }
 
 
@@ -284,18 +319,24 @@ section {
 
        .page3Img {
         background: url('./Chrio_resources/page3.jpg');
-        width: 100% !important;
-        background-size: cover;
-    	min-height: 100vh !important;
-    	padding: 1%;
+	    background-size: cover;
+	    min-width: 100%;
+	    min-height: 100% !important;
+	    background-repeat: no-repeat;
+        padding: 3% !important;
     	padding-top: 50px;
-
-    	background-repeat: no-repeat;
      }
 
      .head {
-     	margin-bottom: 40px;
+     	margin-bottom: 40px !important;
      }
+
+	.planHr {
+	width: 70px;
+	border: 3px solid rgb(255, 228, 0);
+	margin-top: -10px;
+	float: left;
+	}
 
 
      .plans {
@@ -361,3 +402,209 @@ section {
      			margin: auto;
      		}
      }
+
+
+
+
+
+
+
+	.page4Img {
+		 background-image: url('./Chrio_resources/page4.jpg');
+		 background-size: cover;
+		 min-height: 100% !important;
+		 width: 100% !important;
+		 background-repeat: no-repeat;
+		 background-position: center;
+
+	 }
+
+
+	 .cont1 {
+	 	max-width: 100%;
+	 	margin-right: 50px;
+	 }
+
+
+	 	 .cont2 {
+	 	max-width: 90%;
+	 	margin: auto;
+	 	padding-right: 30px;
+	 }
+
+	 .curve {
+	 	background-image: url('./Chrio_resources/quote-top.svg');
+	 	opacity: 0.80;
+	 	background-size: contain;
+	 	background-position: left;
+	 	min-height: 237px;
+	 	height: 40%;
+	 	width: 63% !important;
+	 	margin-left: 50px !important;
+	 	border: 0px;
+	 	min-width: 270px !important;
+	 	max-width: 470px !important;
+	 	margin-bottom: -1px !important; 
+	 	background-repeat: no-repeat;
+	 	padding-left: 30px;
+	 	padding-top: 100px;
+	 	color: #000000
+
+	 }
+
+
+	 .speech {
+	 	background-color: rgba(255, 228, 0, 0.70);
+	 	margin-left: 50px !important;
+		min-height: 300px !important;
+    	min-width: 270px !important;
+    	max-width: 470px !important;
+	 	width: 63% !important;
+	 	border: 0px;
+	 	color: #000000;
+	 	text-align: left;
+	 	font-size: 13px;
+	 	padding: 40px;
+	 	font-family: 'Mont-ExtraLightDEMO';
+	 }
+
+
+	 	 .speechr {
+	 	width: 70px;
+	 	border: 5px solid #000000;
+	 	margin-top: -10px;
+	 	float: left; 
+	 }
+
+
+	 .story {
+	 	font-family: 'Mont-ExtraLightDEMO';
+	 	color: #000000;
+	 }
+
+	 .your {
+	 	font-family: 'Mont-HeavyDEMO';
+	 	color: #000000;
+	 }
+
+
+	 .email {
+	 	margin-top: 100px;
+	 	padding: 0px !important;
+	 	margin-bottom: 50px !important;
+	 }
+
+
+	 input {
+	 	margin: 50px 0px 0px 20px;
+	 	height: 25px;
+	 	min-width: 200px;
+	 	width: 43%;
+	 	max-width: 310px;
+	 	border: 0px;
+	 	background-color: rgba(255, 255, 255, 0.70);
+	 	padding-left: 10px; 
+
+	 }
+
+
+	 *:focus {
+    outline: none;
+	}
+
+	 .mailHead {
+	 	float: right;
+	 	margin-bottom: -40px;
+
+	 }
+
+	 .mailhr {
+	 	width: 70px;
+	 	border: 5px solid #000000;
+	 	margin-top: -10px; 
+	 }
+
+
+	 .story {
+	 	font-family: 'Mont-ExtraLightDEMO';
+	 	color: #000000;
+	 }
+
+	 .your {
+	 	font-family: 'Mont-HeavyDEMO';
+	 	color: #000000;
+	 }
+
+	 .form {
+	 	margin: auto;
+	 	margin-top: 30px;
+	 	text-align: center;
+	 	clear: right;
+	 }
+
+
+	 .msg {
+	 	height: 150px;
+	 	width: 95%;
+	 	max-width: 650px;
+
+	 }
+
+	 .choice {
+	 	margin-right: 50px;
+	 	width: 60% !important;
+	 	max-width: 469px;
+	 }
+
+	 .but {
+	 	margin-left: 55px;
+	 	background-color: transparent;
+	 	width: 85px;
+	 	border-radius: 5px;
+	 	border: 1px solid #000000;
+	 }
+
+
+	 @media only screen and (max-width: 1200px) {
+
+	 		 .choice {
+	 	max-width: 270px !important;
+	 	width: 60% !important;
+	 	margin-top: 30px !important;
+	 }
+
+	 .but {
+	 	margin-top: 40px;
+	 	margin-left: 30px !important;
+	 	background-color: transparent;
+	 	width: 85px;
+	 	border-radius: 5px;
+	 	border: 1px solid #000000;
+	 }
+	 	.mailHead {
+	 		margin: auto !important;
+	 		width: 200px !important;
+	 		float: none;
+	 	}
+
+
+	 	.cont1 {
+	 		margin: auto;
+	 	}
+
+
+	 	.speechHead {
+	 		margin: auto !important;
+	 		width: 200px !important;
+	 	}
+
+	 	.curve, .speech{
+	 		margin: auto !important;
+	 		margin-top: 40px !important;
+	 	}
+
+
+
+
+	 } 
+
